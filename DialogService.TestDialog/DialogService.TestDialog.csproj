@@ -5,7 +5,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>0.0.1</Version>
     <Authors>Yaroslav Kibysh</Authors>
-    <Description>Some testing functionality for DialogService</Description>
+    <Description>Some testing functionality for DialogService. Don't use in production.</Description>
     <PackageIcon>DialogService Logo.png</PackageIcon>
     <RepositoryUrl>https://github.com/DialogService/DialogService.TestDialog</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
