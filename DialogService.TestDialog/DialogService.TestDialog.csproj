@@ -2,6 +2,25 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.1</Version>
+    <Authors>Yaroslav Kibysh</Authors>
+    <Description>Some testing functionality for DialogService</Description>
+    <PackageIcon>DialogService Logo.png</PackageIcon>
+    <RepositoryUrl>https://github.com/DialogService/DialogService.TestDialog</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://dialogservice.github.io/</PackageProjectUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\DialogService.Media\DialogService Logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DialogService" Version="0.3.1" />
+  </ItemGroup>
 
 </Project>
