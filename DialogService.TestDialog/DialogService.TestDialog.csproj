@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <Authors>Yaroslav Kibysh</Authors>
     <Description>Some testing functionality for DialogService. Don't use in production.</Description>
     <PackageIcon>DialogService Logo.png</PackageIcon>

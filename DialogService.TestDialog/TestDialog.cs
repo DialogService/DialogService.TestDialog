@@ -26,5 +26,33 @@ namespace DialogService
 
             return dialog;
         }
+
+        public static string GetClosedBy(IDialogResult result)
+        {
+            string closedText = 
+                result.ClosedBy != null 
+                ? result.ClosedBy.GetType().Name
+                : "unknown thing";
+
+            if (result.ClosedBy != null)
+            {
+                if (result.ClosedBy is IContainerItem)
+                {
+                    var c = (IContainerItem)result.ClosedBy;
+
+                    var contentText = c.Content != null ? c.Content.GetType().Name : "(null)";
+
+                    if (c.Content is Label)
+                    {
+                        var label = c as Label;
+                        contentText = "Label " + label.Content;
+                    }
+
+                    closedText += " with a content of type " + contentText;
+                }
+            }
+
+            return closedText;
+        }
     }
 }
